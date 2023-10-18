@@ -15,7 +15,7 @@ export default function Login(props) {
                 <TextInput style={styles.input} />
             </View>
             <View style={styles.footer}>
-                <TouchableOpacity   style={styles.button}>
+                <TouchableOpacity   style={styles.button} onPress={() => props.navigation.navigate("UserList")} >
                     <Text style={styles.button}>Login</Text>
                 </TouchableOpacity >
                 <TouchableOpacity onPress={() => props.navigation.navigate("Register")} >
